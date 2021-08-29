@@ -7,13 +7,128 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- All Apple touch icons for iPad, iPhone, iPod -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/apple-touch-icon-152x152.png"
+    />
+
+    <!-- All favicon sizes - for all devices and browsers -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicons/favicon-128x128.png"
+      sizes="128x128"
+    />
+
+    <!-- A favicon with four different sizes -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+
+    <!-- Application color for Microsoft Windows app tile and Android status bar -->
+    <meta name="theme-color" content="#edc22e" />
+    <meta name="msapplication-TileColor" content="#edc22e" />
+
+    <!-- Application name for Microsoft Windows app tile -->
+    <meta name="application-name" content="Lights" />
+
+    <!-- Application icons for Microsoft Windows app tile -->
+    <meta
+      name="msapplication-TileImage"
+      content="favicons/ms-tile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="favicons/ms-tile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="favicons/ms-tile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="favicons/ms-tile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="favicons/ms-tile-310x310.png"
+    />
+
+    <!-- Application config file for Microsoft browsers -->
+    <meta name="msapplication-config" content="config.xml" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+
+    <title>Lights</title>
   </head>
   <body>
     <div class="container">
@@ -82,6 +197,31 @@
             Off
           </button>
         </div>
+      </div>
+      <!-- Hallway -->
+      <div class="row mt-3">
+        <div class="col"><h3>Hallway</h3></div>
+        <div class="col">
+          <button
+            onclick="lights('hallway', 'low')"
+            type="button"
+            class="btn btn-light"
+          >
+            On
+          </button>
+        </div>
+        <div class="col">
+          <button
+            onclick="lights('hallway', 'off')"
+            type="button"
+            class="btn btn-dark"
+          >
+            Off
+          </button>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <img src="lights-qr" alt="Qr code" />
       </div>
     </div>
 
