@@ -1,0 +1,16 @@
+{
+  "name": "lighting",
+  "version": "1.0.0",
+  "description": "Defeat Connect+",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "telnet-client": "^1.4.9"
+  }
+}

@@ -1,0 +1,1324 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Copyright 2010 Lutron Electronics Co., Inc. All rights reserved.    -->
+<!--                                                                      -->
+<!-- This file and the information contained herein are confidential      -->
+<!-- and proprietary to Lutron Electronics Co., Inc.  Unauthorized        -->
+<!-- possession or use of this file or the information contained herein   -->
+<!-- is prohibited.  No reproduction may be made of this file without     -->
+<!-- the express written permission of Lutron Electronics Co., Inc.     -->
+<Project>
+	<ProjectName ProjectName="Unit 66 Core E" />
+	<Copyright>Copyright 2010 Lutron Electronics Co., Inc. All rights reserved</Copyright>
+	<GUID>9257ff568dc1814f82af1ae670e74aef</GUID>
+	<AppVer>6.0.1</AppVer>
+	<XMLVer>1.0</XMLVer>
+	<DbExportDate>08/05/2021</DbExportDate>
+	<DbExportTime>12:49:38</DbExportTime>
+	<GlobalPreferences>
+		<RaiseLowerDirection>0</RaiseLowerDirection>
+		<LowerLevel>0</LowerLevel>
+		<RaiseLevel>2</RaiseLevel>
+	</GlobalPreferences>
+	<Areas>
+		<Area Name="Floor 001" IntegrationID="0" OccupancyGroupAssignedToID="0" SortOrder="0">
+			<DeviceGroups />
+			<Scenes />
+			<ShadeGroups />
+			<Outputs />
+			<Areas>
+				<Area Name="Bed 1" IntegrationID="10" OccupancyGroupAssignedToID="700" SortOrder="3">
+					<DeviceGroups>
+						<DeviceGroup Name="Bed 1 Terrace" SortOrder="1">
+							<Devices>
+								<Device Name="Control Station Device 001" IntegrationID="19" DeviceType="PICO_KEYPAD" GangPosition="0" SortOrder="0">
+									<Components>
+										<Component ComponentNumber="2" ComponentType="BUTTON">
+											<Button Name="Button 1" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1510" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>20</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="3" ComponentType="BUTTON">
+											<Button Name="Button 2" ButtonType="AdvancedToggle" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1530" LedLogic="1" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>16</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+															<Preset Name="Press Off">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>16</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="4" ComponentType="BUTTON">
+											<Button Name="Button 3" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1538" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>20</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="5" ComponentType="BUTTON">
+											<Button Name="Button 4" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Raise" ProgrammingModelID="1518" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="6" ComponentType="BUTTON">
+											<Button Name="Button 5" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Lower" ProgrammingModelID="1521" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+									</Components>
+								</Device>
+							</Devices>
+						</DeviceGroup>
+						<DeviceGroup Name="Bed 1 Entrance" SortOrder="0">
+							<Devices>
+								<Device Name="Control Station Device 001" IntegrationID="11" DeviceType="PICO_KEYPAD" GangPosition="0" SortOrder="0">
+									<Components>
+										<Component ComponentNumber="2" ComponentType="BUTTON">
+											<Button Name="Button 1" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1205" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>16</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="3" ComponentType="BUTTON">
+											<Button Name="Button 2" ButtonType="AdvancedToggle" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1225" LedLogic="1" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>12</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+															<Preset Name="Press Off">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>12</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="4" ComponentType="BUTTON">
+											<Button Name="Button 3" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1233" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>16</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="5" ComponentType="BUTTON">
+											<Button Name="Button 4" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Raise" ProgrammingModelID="1213" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="6" ComponentType="BUTTON">
+											<Button Name="Button 5" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Lower" ProgrammingModelID="1216" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+									</Components>
+								</Device>
+							</Devices>
+						</DeviceGroup>
+					</DeviceGroups>
+					<Scenes>
+						<Scene Number="0" Name="Off Scene">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>20</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>16</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="1" Name="Scene 001">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>20</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>16</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="2" Name="Scene 002">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>20</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>16</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="3" Name="Scene 003">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>20</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>16</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="4" Name="Scene 004">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>20</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>16</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+					</Scenes>
+					<ShadeGroups />
+					<Outputs>
+						<Output Name="Bed 1 Terrace" IntegrationID="20" OutputType="INC" Wattage="0" SortOrder="1" />
+						<Output Name="Bed 1 DL" IntegrationID="16" OutputType="INC" Wattage="55" SortOrder="0" />
+					</Outputs>
+					<Areas />
+				</Area>
+				<Area Name="Cupboard" IntegrationID="7" OccupancyGroupAssignedToID="653" SortOrder="4">
+					<DeviceGroups />
+					<Scenes>
+						<Scene Number="0" Name="Off Scene">
+							<Presets>
+								<Preset>
+									<PresetAssignments />
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="1" Name="Scene 001">
+							<Presets>
+								<Preset>
+									<PresetAssignments />
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="2" Name="Scene 002">
+							<Presets>
+								<Preset>
+									<PresetAssignments />
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="3" Name="Scene 003">
+							<Presets>
+								<Preset>
+									<PresetAssignments />
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="4" Name="Scene 004">
+							<Presets>
+								<Preset>
+									<PresetAssignments />
+								</Preset>
+							</Presets>
+						</Scene>
+					</Scenes>
+					<ShadeGroups />
+					<Outputs />
+					<Areas />
+				</Area>
+				<Area Name="Living/ Dining" IntegrationID="6" OccupancyGroupAssignedToID="630" SortOrder="2">
+					<DeviceGroups>
+						<DeviceGroup Name="Balcony" SortOrder="1">
+							<Devices>
+								<Device Name="Control Station Device 001" IntegrationID="18" DeviceType="PICO_KEYPAD" GangPosition="0" SortOrder="0">
+									<Components>
+										<Component ComponentNumber="2" ComponentType="BUTTON">
+											<Button Name="Button 1" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1144" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>15</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="3" ComponentType="BUTTON">
+											<Button Name="Button 2" ButtonType="AdvancedToggle" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1154" LedLogic="1" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>14</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>17</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+															<Preset Name="Press Off">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>14</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>17</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="4" ComponentType="BUTTON">
+											<Button Name="Button 3" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1170" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>15</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="5" ComponentType="BUTTON">
+											<Button Name="Button 4" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Raise" ProgrammingModelID="1241" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="6" ComponentType="BUTTON">
+											<Button Name="Button 5" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Lower" ProgrammingModelID="1244" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+									</Components>
+								</Device>
+							</Devices>
+						</DeviceGroup>
+						<DeviceGroup Name="Living Entrance" SortOrder="0">
+							<Devices>
+								<Device Name="Control Station Device 001" IntegrationID="9" DeviceType="PICO_KEYPAD" GangPosition="0" SortOrder="0">
+									<Components>
+										<Component ComponentNumber="2" ComponentType="BUTTON">
+											<Button Name="Button 1" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1097" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>21</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>17</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>14</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="3" ComponentType="BUTTON">
+											<Button Name="Button 2" ButtonType="AdvancedToggle" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1136" LedLogic="1" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:00.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>22</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>13</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+															<Preset Name="Press Off">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:00.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>22</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>13</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="4" ComponentType="BUTTON">
+											<Button Name="Button 3" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1108" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>21</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>17</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>14</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="5" ComponentType="BUTTON">
+											<Button Name="Button 4" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Raise" ProgrammingModelID="1124" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="6" ComponentType="BUTTON">
+											<Button Name="Button 5" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Lower" ProgrammingModelID="1127" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+									</Components>
+								</Device>
+							</Devices>
+						</DeviceGroup>
+					</DeviceGroups>
+					<Scenes>
+						<Scene Number="0" Name="Off Scene">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>21</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>17</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>15</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>14</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="1" Name="Scene 001">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>21</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>17</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>15</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>14</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="2" Name="Scene 002">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>21</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>17</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>15</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>14</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="3" Name="Scene 003">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>21</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>17</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>15</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>14</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="4" Name="Scene 004">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>21</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>17</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>15</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>14</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+					</Scenes>
+					<ShadeGroups />
+					<Outputs>
+						<Output Name="Dining DL" IntegrationID="21" OutputType="INC" Wattage="0" SortOrder="3" />
+						<Output Name="Dining 5A" IntegrationID="17" OutputType="INC" Wattage="0" SortOrder="2" />
+						<Output Name="Balconey" IntegrationID="15" OutputType="INC" Wattage="100" SortOrder="1" />
+						<Output Name="Living DL" IntegrationID="14" OutputType="ELV" Wattage="55" SortOrder="0" />
+					</Outputs>
+					<Areas />
+				</Area>
+				<Area Name="Kitchen" IntegrationID="5" OccupancyGroupAssignedToID="434" SortOrder="1">
+					<DeviceGroups />
+					<Scenes>
+						<Scene Number="0" Name="Off Scene">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:00.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>22</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>13</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="1" Name="Scene 001">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:00.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>22</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>13</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="2" Name="Scene 002">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:00.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>22</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>13</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="3" Name="Scene 003">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:00.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>22</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>13</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="4" Name="Scene 004">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:00.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>22</IntegrationID>
+										</PresetAssignment>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>13</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+					</Scenes>
+					<ShadeGroups />
+					<Outputs>
+						<Output Name="Kitchen Pelmet" IntegrationID="22" OutputType="NON_DIM_INC" Wattage="0" SortOrder="1" />
+						<Output Name="Kitchen DL" IntegrationID="13" OutputType="INC" Wattage="44" SortOrder="0" />
+					</Outputs>
+					<Areas />
+				</Area>
+				<Area Name="Hall" IntegrationID="2" OccupancyGroupAssignedToID="66" SortOrder="0">
+					<DeviceGroups>
+						<DeviceGroup Name="Hall Entrance" SortOrder="0">
+							<Devices>
+								<Device Name="Control Station Device 001" IntegrationID="8" DeviceType="PICO_KEYPAD" GangPosition="0" SortOrder="0">
+									<Components>
+										<Component ComponentNumber="2" ComponentType="BUTTON">
+											<Button Name="Button 1" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1050" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>100.00</Level>
+																		<IntegrationID>12</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="3" ComponentType="BUTTON">
+											<Button Name="Button 2" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1063" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>20</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>21</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:00.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>22</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>16</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>17</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>15</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>14</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>13</IntegrationID>
+																	</PresetAssignment>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>12</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="4" ComponentType="BUTTON">
+											<Button Name="Button 3" ButtonType="SingleAction" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" ProgrammingModelID="1090" LedLogic="2" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3">
+														<Presets>
+															<Preset Name="Press On">
+																<PresetAssignments>
+																	<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+																		<Delay>00:00:00.00</Delay>
+																		<Fade>00:00:02.00</Fade>
+																		<Level>0.00</Level>
+																		<IntegrationID>12</IntegrationID>
+																	</PresetAssignment>
+																</PresetAssignments>
+															</Preset>
+														</Presets>
+													</Action>
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="5" ComponentType="BUTTON">
+											<Button Name="Button 4" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Raise" ProgrammingModelID="1058" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+										<Component ComponentNumber="6" ComponentType="BUTTON">
+											<Button Name="Button 5" ButtonType="MasterRaiseLower" PrimaryActionType="3" SceneSaver="false" CycleDim="false" StopIfMoving="false" Direction="Lower" ProgrammingModelID="1061" LedLogic="4" ReverseLedLogic="false">
+												<Actions>
+													<Action Name="Press" ActionType="3" />
+													<Action Name="Release" ActionType="4" />
+													<Action Name="Hold" ActionType="5" />
+												</Actions>
+												<Notes />
+											</Button>
+										</Component>
+									</Components>
+								</Device>
+							</Devices>
+						</DeviceGroup>
+					</DeviceGroups>
+					<Scenes>
+						<Scene Number="0" Name="Off Scene">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>0.00</Level>
+											<IntegrationID>12</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="1" Name="Scene 001">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>100.00</Level>
+											<IntegrationID>12</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="2" Name="Scene 002">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>74.74</Level>
+											<IntegrationID>12</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="3" Name="Scene 003">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>49.49</Level>
+											<IntegrationID>12</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+						<Scene Number="4" Name="Scene 004">
+							<Presets>
+								<Preset>
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_LEVEL" AssignmentType="2">
+											<Delay>00:00:00.00</Delay>
+											<Fade>00:00:02.00</Fade>
+											<Level>24.24</Level>
+											<IntegrationID>12</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Scene>
+					</Scenes>
+					<ShadeGroups />
+					<Outputs>
+						<Output Name="Hall DL" IntegrationID="12" OutputType="INC" Wattage="22" SortOrder="0" />
+					</Outputs>
+					<Areas />
+				</Area>
+			</Areas>
+		</Area>
+	</Areas>
+	<OccupancyGroups>
+		<OccupancyGroup OccupancyGroupNumber="66" />
+		<OccupancyGroup OccupancyGroupNumber="434" />
+		<OccupancyGroup OccupancyGroupNumber="630" />
+		<OccupancyGroup OccupancyGroupNumber="653" />
+		<OccupancyGroup OccupancyGroupNumber="700" />
+	</OccupancyGroups>
+	<Timeclocks>
+		<Timeclock Name="Project Timeclock" IntegrationID="1" SortOrder="0">
+			<TimeclockModes>
+				<TimeclockMode Name="Away" Index="0" />
+				<TimeclockMode Name="Suspend" Index="1" />
+				<TimeclockMode Name="Alternate" Index="2" />
+				<TimeclockMode Name="Normal" Index="3" />
+			</TimeclockModes>
+			<TimeClockEvents />
+		</Timeclock>
+		<Timeclock Name="PreBuiltVacationModeTimeClock" IntegrationID="0" SortOrder="1">
+			<TimeclockModes>
+				<TimeclockMode Name="Away" Index="0" />
+				<TimeclockMode Name="Suspend" Index="1" />
+				<TimeclockMode Name="Alternate" Index="2" />
+				<TimeclockMode Name="Normal" Index="3" />
+			</TimeclockModes>
+			<TimeClockEvents>
+				<TimeClockEvent Name="PreBuiltVacationModeTimeClockEvent001" Type="Fixed" Time="18:00" EventNumber="1" ScheduleType="Weekly" Days="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" Mode="Normal">
+					<Actions>
+						<Action Name="Press" ActionType="3">
+							<Presets>
+								<Preset Name="Press On">
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_STATEVARIABLE_STATE" AssignmentType="39">
+											<Number>0</Number>
+											<IntegrationID>3</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Action>
+					</Actions>
+				</TimeClockEvent>
+				<TimeClockEvent Name="PreBuiltVacationModeTimeClockEvent002" Type="Fixed" Time="00:00" EventNumber="2" ScheduleType="Weekly" Days="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" Mode="Normal">
+					<Actions>
+						<Action Name="Press" ActionType="3">
+							<Presets>
+								<Preset Name="Press On">
+									<PresetAssignments>
+										<PresetAssignment AssignmentName="GOTO_STATEVARIABLE_STATE" AssignmentType="39">
+											<Number>1</Number>
+											<IntegrationID>3</IntegrationID>
+										</PresetAssignment>
+									</PresetAssignments>
+								</Preset>
+							</Presets>
+						</Action>
+					</Actions>
+				</TimeClockEvent>
+			</TimeClockEvents>
+		</Timeclock>
+	</Timeclocks>
+	<HVACs />
+	<GreenModes>
+		<GreenMode IntegrationID="4">
+			<GreenModeSteps>
+				<GreenModeStep Name="Off" StepNumber="1" SortOrder="0">
+					<Presets>
+						<Preset Name="StepPreset">
+							<PresetAssignments>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>21</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>20</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>17</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>16</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>15</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>14</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>13</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>0.00</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>12</IntegrationID>
+								</PresetAssignment>
+							</PresetAssignments>
+						</Preset>
+					</Presets>
+				</GreenModeStep>
+				<GreenModeStep Name="Green Mode" StepNumber="2" SortOrder="1">
+					<Presets>
+						<Preset Name="StepPreset">
+							<PresetAssignments>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>21</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>20</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>17</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>16</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>15</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>14</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>13</IntegrationID>
+								</PresetAssignment>
+								<PresetAssignment AssignmentName="ADJUST_RUNTIME_HIGH_END_TRIM_WITH_GOTO_LEVEL" AssignmentType="43">
+									<TrimValue>4.04</TrimValue>
+									<Level>100.00</Level>
+									<Fade>00:00:02.00</Fade>
+									<IntegrationID>12</IntegrationID>
+								</PresetAssignment>
+							</PresetAssignments>
+						</Preset>
+					</Presets>
+				</GreenModeStep>
+			</GreenModeSteps>
+		</GreenMode>
+	</GreenModes>
+</Project>
