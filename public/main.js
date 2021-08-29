@@ -11,7 +11,7 @@ const values = {
 }
 
 function lights(area, value) {
-  fetch(`http://localhost:3000/lights/${rooms[area]}/${values[value]}`)
+  fetch(`/lights/${rooms[area]}/${values[value]}`)
     .then((response) => response.json())
     .then((data) => console.log(data))
 }
