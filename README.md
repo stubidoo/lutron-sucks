@@ -1,5 +1,7 @@
 # Nodejs Lighting API
 
+Phone -----> RaspberryPi (API) -----> Lutron
+
 ## Goals
 
 - Provide an easier way to control lighting, than the Connect+ app.
