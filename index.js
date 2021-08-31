@@ -1,8 +1,15 @@
 const client = require("./lutronClient.js")
 const express = require("express")
+const cors = require("cors")
 const path = require("path")
 const app = express()
 const { isEmpty } = require("./utils/util")
+
+app.use(
+  cors({
+    origin: "*"
+  })
+)
 
 app.use(express.static("public"))
 
@@ -17,7 +24,7 @@ app.get("/lights/:areaId/:value", function (req, res) {
   if (!isEmpty(client) && areaId && value) {
     client.write(`#OUTPUT,${areaId},1,${value}\r\n`)
     res.json({ success: true })
-    // END
+    // END Telnet session:
     // client.end()
   } else {
     res.send({ success: false })
