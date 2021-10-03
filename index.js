@@ -1,3 +1,4 @@
+require("dotenv").config()
 const client = require("./lutronClient.js")
 const express = require("express")
 const cors = require("cors")

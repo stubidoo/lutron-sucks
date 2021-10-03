@@ -1,6 +1,6 @@
 const net = require("net")
 
-const client = net.connect({ host: "192.168.1.114", port: 23 }, () => {
+const client = net.connect({ host: process.env.LUTRON_IP, port: 23 }, () => {
   console.log("Connected to Lutron!")
   setTimeout(() => {
     client.write("lutron\r\n")
